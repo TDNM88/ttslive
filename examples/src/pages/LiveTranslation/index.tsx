@@ -20,7 +20,7 @@ export default function Basic() {
 
   const whisper = useMemo(() => {
     // 1️⃣ Instantiate the WhisperLive class
-    const whisper = new WhisperLive({ openAiKey: apiKey, language: Language.Japanese })
+    const whisper = new WhisperLive({ openAiKey: apiKey, language: Language.Vietnamese })
   
     // 2️⃣ Catch the transcriptions
     whisper.onTranscript((text) => setTranscription(text));
